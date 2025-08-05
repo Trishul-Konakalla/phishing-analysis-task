@@ -15,15 +15,12 @@ To perform technical analysis of a suspicious email by extracting and examining 
 ✅ **1. Created a working folder** in `/home/kali/phishing-task`  
 ✅ **2. Saved the full email header** from Gmail into `email_header.txt`  
 ✅ **3. Ran WHOIS on sender IP `103.52.182.47`:**
-```bash
+
 whois 103.52.182.47
 📌 Result: IP belongs to Netcore Solutions Pvt Ltd, a legitimate Indian email marketing company.
 
 ✅ 4. Ran WHOIS on sender domain nopaperforms.info:
 
-bash
-Copy
-Edit
 whois nopaperforms.info
 📌 Result: Domain registered via GoDaddy in 2015, protected via Domains By Proxy, and used AWS + Cloudflare DNS. Not suspicious by itself.
 
