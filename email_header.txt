@@ -1,0 +1,66 @@
+Delivered-To: konakallatrishul@gmail.com
+Received: by 2002:a05:7000:91c4:b0:6a0:5119:338f with SMTP id k4csp1794810maf;
+        Mon, 4 Aug 2025 18:27:48 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IE+JGzQSNFUG0Z3Rz6fH8kcouLJJt5zCZv3cRIgjAx4zlX2pJUruNrSV0cbEgNZjNU2UxLB
+X-Received: by 2002:a05:6402:3586:b0:615:caad:7853 with SMTP id 4fb4d7f45d1cf-615e6eb596cmr10173528a12.7.1754357268138;
+        Mon, 04 Aug 2025 18:27:48 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1754357268; cv=none;
+        d=google.com; s=arc-20240605;
+        b=CvzjaBnCtprHP7vFRIpjKZvfuapefJiEs6yFk0a15QaObydWBLTEkzLLlnhr6+d1Kg
+         GKXcUBcyFmJ1axMhEXYgJrF8c6/eJ7ak+Vg1zNZ3H8cWLdM9tfKAN/jz/c2ZVBEksZSu
+         Czz1wJQufBHodHlrE7fK0Y1WfLVY6LPK0itsTSpJLyduuG3Vi2c9xoVkSwUFG41+dK/f
+         ydWIBOVnjhUKENNfNg9U4nQS5a9lsAo/LmLrugtw+6AYfl6d0wUxjQcbDcvCB+PcFf+S
+         /LBlJ2p+aikOILpJpNbOC2LSlhAgPVBxswhkjZr01VmfMVqZf8CjCMED2+jPBqYpmGVg
+         28Cw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=date:list-unsubscribe-post:feedback-id:reply-to:list-unsubscribe
+         :content-transfer-encoding:mime-version:message-id:subject:from:to
+         :dkim-signature:dkim-signature;
+        bh=FKQ7iSQPtejocYJrntTyg3Is5eKFjI8YSdi3D4rYOT8=;
+        fh=D05QC5zHiEgpKBiOvAEMmsRyl5SwtZBsbjfMtcqztgc=;
+        b=j6LXbDZ7HJfzE2yjeu+B1LgACv3hUug5gtaOUlWNzE1QXzbKeZNQrYkkr7E8kjD5aj
+         0ioTeVvcu2TUePnxPAinXX1Pxxg8JLNNkBTuVqVnL14Vror4AlV7gDYCKAEQTp2cnHqR
+         ZcHKUJ29IMbhGUCWe6FbBdLolImvwwrng5daASCEcMHb2c8JnNMptB8X48i76RSB6iRZ
+         05KfSnZ+efTxqqs7bvxpSCUqPdZwP6mQRgjz4Pm/bbgSr102nbKaVs03a5QkRPMX34TP
+         1dXP2bGl+3euRzRWsglMFY4vZSAVcO16EkChC5AmAy9vPtmOV7+MagJeZQ2mTt2B9LjG
+         MhNA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@nopaperforms.info header.s=pepipost header.b=TeRX9Pq9;
+       dkim=pass header.i=@env.etransmail.com header.s=fnc header.b=p6xDGmjY;
+       spf=pass (google.com: domain of 17542467743834757-190176-1-gmail.com@delivery.nopaperforms.info designates 103.52.182.47 as permitted sender) smtp.mailfrom=17542467743834757-190176-1-gmail.com@delivery.nopaperforms.info
+Return-Path: <17542467743834757-190176-1-gmail.com@delivery.nopaperforms.info>
+Received: from imta1-182.47.ncm01.com (imta1-182.47.ncm01.com. [103.52.182.47])
+        by mx.google.com with ESMTPS id 4fb4d7f45d1cf-615a8dd6f2asi7796026a12.557.2025.08.04.18.27.47
+        for <konakallatrishul@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 04 Aug 2025 18:27:48 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 17542467743834757-190176-1-gmail.com@delivery.nopaperforms.info designates 103.52.182.47 as permitted sender) client-ip=103.52.182.47;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@nopaperforms.info header.s=pepipost header.b=TeRX9Pq9;
+       dkim=pass header.i=@env.etransmail.com header.s=fnc header.b=p6xDGmjY;
+       spf=pass (google.com: domain of 17542467743834757-190176-1-gmail.com@delivery.nopaperforms.info designates 103.52.182.47 as permitted sender) smtp.mailfrom=17542467743834757-190176-1-gmail.com@delivery.nopaperforms.info
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=pepipost; d=nopaperforms.info; h=To:From:Subject:Message-Id:MIME-Version:Content-Type:Content-Transfer-Encoding:List-Unsubscribe:Reply-To:Feedback-Id:Date:from:to:subject; bh=FKQ7iSQPtejocYJrntTyg3Is5eKFjI8YSdi3D4rYOT8=; b=TeRX9Pq9wQmXOW+xDpOsi3pvwwYym36oU0Gmap9qKchmJOWRscx3EzFPygWhqUC2Bx+GvwKfvnbk
+   vWkpRQOTOb5GGQ2O+jz38m9+U+FqKVr/J73tpwAv61vyM3/KhmQPECb1U37azd7Ok/XbKnXcvMgO
+   E4THPaAQue1vu57GdNk=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=fnc; d=env.etransmail.com; h=To:From:Subject:Message-Id:MIME-Version:Content-Type:Content-Transfer-Encoding:List-Unsubscribe:Reply-To:Feedback-Id:Date:from:to:subject; bh=FKQ7iSQPtejocYJrntTyg3Is5eKFjI8YSdi3D4rYOT8=; b=p6xDGmjYIQhR3vMHDFrh6xgIBkm9+7GVJ4T4ZPBjqsHQjFrLgj8OeinSer3hXC36gyNS/mp2MCHk
+   adwIL+XA11KKDKb4UTKhR5hrkGXnWoMCaKWqgcVaQB3VMgmVfFg90N9UWlAJ2s3IMurMA9SJuyMU
+   8K/qpHOS11I7z3Znq60=
+To: <konakallatrishul@gmail.com>
+From: Woxsen University <enquiry@woxsen.edu.in>
+Subject: Admission window ending for B.Tech at Woxsen | 3 days to go
+Message-Id: <sgwkbh17542467743834757@woxsen.edu.in>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="_----------=_17543098006483697620"
+Content-Transfer-Encoding: binary
+List-Unsubscribe: <https://unsub-api.netcorecloud.net/YHNMJN?id=190176=ZB9WCF0DVw8CREUYEBgWQRUQERkVFhUQFRUZQkNBEkIRQ0YZRBNGGBQYRRgQGBZBFQBNUlpYVFtUWVUDFxNbEVkWCnkDXgdRWBYGV11EB1YABAMNAwECBAYNClZUVAUeWRcSSRcJSRdBVhZNUhVXEVweX1xBVVpCUFZVDRYFHAxUF0lgLH0rcnoHDFxMTgU=>, <mailto:17542467743834757-190176-fncunsub@usub.ftrans03.com?subject=Unsubscribe>
+Reply-To: enquiry@woxsen.edu.in
+Feedback-Id: 190176:202508:1:falconide
+X-Dkim-Options: 
+X-Fncid: 190176-17542467743834757-0
+X-Mta-Source: npfwoxsenpromo_190176
+X-Injtime: 1754309800
+X-Traffic-Type: 190176-2
+X-Mailer: NetcoreCloud Mailer
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Date: Tue, 5 Aug 2025 06:57:47 +0530
