@@ -1,0 +1,60 @@
+============================
+Phishing Email Analysis Report
+============================
+
+📧 Email Header File: email_header.txt  
+🕵️ From: enquiry@woxsen.edu.in  
+📤 Return Path: 17542467743834757-190176-1-gmail.com@delivery.nopaperforms.info  
+📅 Date: August 5, 2025
+
+============================
+1. Header Authentication Results:
+============================
+✔ SPF: PASS  
+✔ DKIM: PASS  
+❌ DMARC: Not shown in header
+
+Observations:
+- SPF and DKIM passed → email is from an authenticated sender.
+- The return path and sender domain differ, but the IP address (103.52.182.47) belongs to Netcore Solutions Pvt Ltd.
+- Netcore is a known and widely used marketing service provider.
+
+============================
+2. IP WHOIS Result:
+============================
+IP: 103.52.182.47  
+Belongs to: Netcore Solutions Pvt Ltd  
+Country: India  
+Result obtained using:
+Command: whois 103.52.182.47  
+Screenshot: whois_result.png
+
+Conclusion: IP is legitimate, not suspicious.
+
+============================
+3. Domain WHOIS Result:
+============================
+Domain: nopaperforms.info  
+Registrar: GoDaddy  
+Created: Dec 11, 2015  
+Expires: Dec 11, 2025  
+Registrant: Hidden (Domains By Proxy)  
+Name Servers: Cloudflare + AWS DNS  
+Screenshot: whois_nopaperforms.png
+
+Conclusion: Domain is private but old and used by NetcoreCloud for bulk marketing. Not newly created → less suspicious.
+
+============================
+Final Verdict:
+============================
+✅ The email is most likely **not phishing**.  
+It is a promotional message sent through an authorized marketing platform (Netcore) on behalf of Woxsen University.
+
+============================
+Attachments:
+============================
+📁 email_header.txt  
+📸 whois_result.png  
+📸 whois_nopaperforms.png
+📝 phishing_analysis_report.txt
+
